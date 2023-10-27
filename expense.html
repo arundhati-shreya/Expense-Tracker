@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="expense.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-light bg-light justify-content-center"> <!-- Center align the contents -->
+        <a class="navbar-brand d-flex align-items-center" href="#"> <!-- Use d-flex and align-items-center to center the logo and text -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNBGr3QPOWSx
+            s1GWhXkTVs8T7kIhEnTpErKO3Exei82SXtW7p2LMllbHpnfGI4kkPdkmA&usqp=CAU" 
+            alt="Logo" width="60" height="64">
+            <h1 class="ml-2">Expense Tracker</h1> 
+        </a>
+    </nav>
+    <div class="container mt-3">
+    <div class="container mt-3">
+        <label for="expenseAmount">Expense Amount</label>
+        <input type="number" class="form-control amount" min="100" max="999999">
+        <label for="expenseDescription">Description</label>
+        <input type="text" class="form-control des">
+        <label for="category">Category</label>
+        <select name="category" id="cat" class="form-control">
+            <option value="Movie">Movie</option>
+            <option value="Food">Food</option>
+            <option value="Fuel">Fuel</option>
+            <option value="Grocery">Grocery</option>
+            <option value="Vacation">Vacation</option>
+            <option value="Gym">Gym</option>
+        </select>
+        <button class="btn btn-primary mt-2">Add Expense</button>
+    </div>
+    <div class="container mt-3">
+        <h2>Expense List</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                </tr>
+            </thead>
+            <tbody class="tbody"></tbody>
+        </table>
+       
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="expense.js"></script>
+</body>
+</html>
+<!--  -->
